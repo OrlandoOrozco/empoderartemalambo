@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EmpoderArte - Contacto</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="assets/images/LOGO_COMPLETO.webp" alt="EmpoderArte Logo" class="logo">
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="nosotros.html" class="nav-link">Sobre nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a href="contacto.html" class="nav-link active">Contacto</a>
+          </li>
+        </ul>
+        <button class="nav-toggle" id="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero-content">
+        <h1>Contáctanos</h1>
+        <p>Estamos aquí para ayudarte. Completa el formulario o utiliza nuestros datos de contacto.</p>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-form">
+            <h2>Envíanos un mensaje</h2>
+            <!-- 
+              IMPORTANTE: 
+              1. Reemplaza 'tu-correo@ejemplo.com' con tu dirección de correo real.
+              2. La primera vez que envíes un formulario, recibirás un correo para activar el servicio.
+              3. Después de activarlo, todos los mensajes del formulario llegarán a tu bandeja de entrada.
+            -->
+            <form action="https://formsubmit.co/inmetalmax17@gmail.com" method="POST">
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn">Enviar mensaje</button>
+              
+              <!-- Opcional: Redirige a una página de agradecimiento después de enviar -->
+              <input type="hidden" name="_next" value="https://tudominio.com/gracias.html">
+              <!-- Opcional: Asunto del correo que recibirás -->
+              <input type="hidden" name="_subject" value="Nuevo mensaje desde la web de EmpoderArte">
+            </form>
+          </div>
+
+          <div class="contact-info">
+            <h2>Información</h2>
+            <div class="info-item">
+              <h3></i>Ubicación</h3>
+              <p>Urbanización Lluvia de Oro<br>Malambo, Atlántico</p>
+            </div>
+            <div class="info-item">
+              <h3>Email</h3>
+              <p><a href="mailto:info@empoderarte.com">info@empoderarte.com</a></p>
+            </div>
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15683.64491489618!2d-74.7858156!3d10.8530997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef431b11963987d%3A0x5657855331a33195!2sLluvia%20De%20Oro!5e0!3m2!1ses-419!2sco!4v1663541234567" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section footer-brand">
+            <img src="assets/images/LOGO_EMPODERARTE_BLANCO.webp" alt="EmpoderArte Logo" class="footer-logo">
+            <p class="footer-desc">Urbanización Lluvia de Oro, Malambo, Atlántico</p>
+          </div>
+          <div class="footer-section">
+            <h3>Proyecto</h3>
+            <p><a href="https://www.mininterior.gov.co/" target="_blank" rel="noopener noreferrer">Ministerio de interior</a></p>
+            <p><a href="https://www.findeter.gov.co/" target="_blank" rel="noopener noreferrer">Findeter</a></p>
+            <p>Junta comunal</p>
+            <p>Junta de urbanización</p>
+          </div>
+          <div class="footer-section">
+            <h3>Contacto</h3>
+            <p><a href="mailto:eduargperalta@gmail.com">eduargperalta@gmail.com</a></p>
+            <p>+57 3145880624</p>
+            <p>Malambo, Atlántico</p>
+          </div>
+          <div class="footer-section">
+            <h3>Redes sociales</h3>
+            <p><a href="https://www.facebook.com/share/1C89WWkei9/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+            <p><a href="https://www.instagram.com/empoderarte_col?igsh=ZTFvd2N4aTlxNnJ5" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
